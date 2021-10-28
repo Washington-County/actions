@@ -6,13 +6,12 @@ addAssignees: false
 
 # A list of reviewers to be added to pull requests (GitHub user name)
 reviewers:
-  - washco-or
-  - jlwcor
-  - gatoona
+  - "${{ secrets.PRIMARY_QA }}"
+  - "${{ secrets.SECONDARY_QA }}"
 
 # A number of reviewers added to the pull request
 # Set 0 to add all the reviewers (default: 0)
-numberOfReviewers: 1
+numberOfReviewers: 2
 
 # A list of assignees, overrides reviewers if set
 # assignees:
